@@ -1,6 +1,7 @@
 <?php 
 
-namespace Nswebstudio;
+namespace Green\Users;
+
 
 class Person{
 
@@ -10,5 +11,3 @@ class Person{
 		$this->name = $name;
 	}
 }
-
-?>

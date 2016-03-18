@@ -2,6 +2,7 @@
 
 namespace Green;
 
+use Green\Users\Person;
 
 class Staff{
 
@@ -21,5 +22,3 @@ class Staff{
 		return $this->members;
 	}
 }
-
-?>

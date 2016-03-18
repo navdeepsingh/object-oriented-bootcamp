@@ -2,6 +2,7 @@
 
 namespace Green;
 
+use Green\Users\Person;
 
 class Business{
 	/**
@@ -34,5 +35,3 @@ class Business{
 	}
 }
 
-
-?>

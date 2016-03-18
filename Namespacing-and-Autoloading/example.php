@@ -14,16 +14,17 @@ require 'src/Business.php';
 require 'src/Person.php';
 require 'src/Staff.php';
 */
-require 'vendor/autoload.php';
 
+use Green\Users\Person;
+use Green\Staff;
+use Green\Business;
 
-$navdeep = new Green\Person('Navdeep Singh');
+$navdeep = new Person('Navdeep Singh');
 
-$staff = new Green\Staff([$navdeep]);
+$staff = new Staff([$navdeep]);
 
-$nswebstudio = new Green\Business($staff);
+$nswebstudio = new Business($staff);
 
-$nswebstudio->hire(new Green\Person('Sarabjit Kaur'));
+$nswebstudio->hire(new Person('Sarabjit Kaur'));
 
 var_dump($nswebstudio->getStaffMembers());
-?>
